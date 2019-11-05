@@ -1,0 +1,7 @@
+query ALL_CENTRES {
+  centres {
+    id
+    name
+    geometry
+  }
+}

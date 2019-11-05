@@ -1,3 +1,12 @@
 import React from "react"
 
-export default () => <div>Hello world!</div>
+import Layout from "../components/Layout"
+import Map from "../components/Map"
+
+export default () => {
+  return (
+    <Layout>
+      <Map />
+    </Layout>
+  )
+}
