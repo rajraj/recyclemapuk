@@ -4,7 +4,7 @@ import { useQuery } from "@apollo/react-hooks"
 
 import { ALL_CENTRES } from "./operations.graphql"
 
-const CentresHeatmap = () => {
+const CentresHeatmap = ({ setCentreId }) => {
   const { loading, error, data } = useQuery(ALL_CENTRES)
 
   if (loading) return <div>Loading...</div>
@@ -42,7 +42,7 @@ const CentresHeatmap = () => {
               "circle-stroke-color": "white",
               "circle-stroke-width": 1,
             }}
-            onClick={circle => console.log(circle.features[0].properties)}
+            onClick={circle => setCentreId(circle.features[0].properties.id)}
           />
         </>
       )}

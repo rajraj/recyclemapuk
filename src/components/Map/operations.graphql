@@ -5,3 +5,11 @@ query ALL_CENTRES {
     geometry
   }
 }
+
+query CENTRES_BY_PK($id: uuid!) {
+  centres_by_pk(id: $id) {
+    id
+    name
+    geometry
+  }
+}
