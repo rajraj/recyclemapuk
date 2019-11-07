@@ -41,6 +41,32 @@ const CentresHeatmap = ({ setCentreId }) => {
               "circle-color": "#5643fc",
               "circle-stroke-color": "white",
               "circle-stroke-width": 1,
+              // "circle-radius": [
+              //   "interpolate",
+              //   ["linear"],
+              //   ["zoom"],
+              //   7,
+              //   2,
+              //   9,
+              //   2,
+              //   11,
+              //   5,
+              //   12,
+              //   7,
+              //   13,
+              //   9,
+              //   15,
+              //   10,
+              // ],
+              // "circle-opacity": [
+              //   "interpolate",
+              //   ["linear"],
+              //   ["zoom"],
+              //   13.5,
+              //   1,
+              //   13.6,
+              //   0,
+              // ],
             }}
             onClick={circle => setCentreId(circle.features[0].properties.id)}
           />

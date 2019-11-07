@@ -11,9 +11,9 @@ import CentreInfo from "./CentreInfo"
 export default () => {
   const [centreId, setCentreId] = useState(null)
   const [viewport, setViewport] = useState({
-    latitude: 51.04375803746101,
-    longitude: -0.1742255640437182,
-    zoom: 8,
+    latitude: 55.21837537667136,
+    longitude: -3.3536159702232453,
+    zoom: 5,
   })
 
   return (

@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 body {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar {
@@ -12,8 +15,8 @@ body {
   padding: 30px;
   background-color: #fff;
   z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 10px;
   animation: slide-out 0.2s forwards;
+  border-right: 1px solid #edf2f7;
 }
 
 @keyframes slide-out {
