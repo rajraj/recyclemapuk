@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import MapGL, {
+  AttributionControl,
   FullscreenControl,
   NavigationControl,
 } from "@urbica/react-map-gl"
@@ -26,7 +27,13 @@ export default () => {
           mapStyle="mapbox://styles/recyclemapuk/ck2lgo0ep09hs1co2o7boernb"
           accessToken={`${process.env.GATSBY_MAPBOX_API_TOKEN}`}
           onViewportChange={viewport => setViewport(viewport)}
+          attributionControl={false}
         >
+          <AttributionControl
+            compact={false}
+            position="bottom-right"
+            customAttribution="Inspired by https://beta.recyclemap.ru/"
+          />
           <FullscreenControl position="top-right" />
           <NavigationControl showZoom position="top-right" />
 
